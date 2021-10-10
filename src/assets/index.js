@@ -1,0 +1,16 @@
+export { default as logo } from './images/logo-trans.png'
+export { default as iconNotifaction } from './images/icon-notifaction.png'
+export { default as iconLogo } from './images/icon-logo.png'
+export { default as cardImage } from './images/card-image.png'
+// card icon
+export { default as shareIcon } from './images/share-icon.png'
+export { default as saveIcon } from './images/save-icon.png'
+// footer images
+export { default as google } from './images/google-trans.png'
+export { default as apple } from './images/apple-trans.png'
+export { default as beIcon } from './images/be-icon.png'
+export { default as facebookIcon } from './images/facebook-icon.png'
+export { default as iconJobzilla } from './images/icon-jobzilla.png'
+export { default as instgramIcon } from './images/instgram-icon.png'
+export { default as pinIcon } from './images/pin-icon.png'
+export { default as twitterIcon } from './images/twitter-icon.png'

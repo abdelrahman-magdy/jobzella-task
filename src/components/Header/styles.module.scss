@@ -1,0 +1,118 @@
+.header {
+    background: #fff;
+    padding-block: 10px;
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+    }
+
+    &-logo {
+        max-width: 65px;
+        flex: 0 0 65px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-inline-start: 45px;
+    }
+
+    &-nav-item {
+        display: inline-block;
+    }
+
+    &-nav-link,
+    &-nav-link-active {
+        text-decoration: none;
+        color: #000;
+        text-transform: capitalize;
+        margin-inline-end: 65px;
+        position: relative;
+
+        &-active,
+        &:hover {
+            &:after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 2px;
+                background: #000;
+                inset-block-end: -4px;
+                inset-inline-start: 0;
+            }
+        }
+    }
+
+    &-icons {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &-item {
+        margin-inline-end: 15px;
+        font-weight: bold;
+        line-height: 0;
+
+        &:nth-child(1) {
+            .header-icon {
+                max-width: 18px;
+            }
+        }
+
+        &:nth-child(2) {
+            .header-icon {
+                max-width: 14px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 520px) {
+    .header {
+        &-nav-list {
+            margin-inline-start: 20px;
+        }
+
+        &-nav-item {
+            display: block;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+
+        &-nav-link,
+        &-nav-link-active {
+            margin-inline-end: 20px;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .header {
+        &-container {
+            padding-inline: 15px;
+        }
+    }
+}

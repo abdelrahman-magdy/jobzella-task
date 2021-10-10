@@ -1,0 +1,120 @@
+.card {
+    border: 1px solid #d7d7d8;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    margin-block-end: 20px;
+
+    &:hover {
+        box-shadow: 15px 15px 40px 0 rgba(9, 86, 126, 0.1);
+    }
+
+    &-header {
+        display: block;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    &-image {
+        display: block;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    &-body {
+        padding: 20px 15px;
+    }
+
+    &-head {
+        margin: 0px 0 8px;
+        text-transform: capitalize;
+        font-size: 20px;
+        color: #646eff;
+        cursor: pointer;
+    }
+
+    &-location {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: #a1a1a1;
+        margin: 0 0 8px;
+    }
+
+    &-desc {
+        margin: 0;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+
+.card-footer {
+    padding: 8px 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-btn {
+        display: flex;
+        background: transparent;
+        border: transparent;
+        color: #a1a1a1;
+        font-size: 16px;
+        text-transform: capitalize;
+        margin-inline-end: 10px;
+        cursor: pointer;
+    }
+
+    &-actions {
+        display: flex;
+    }
+
+    &-image {
+        margin-inline-end: 5px;
+    }
+
+    &-link {
+        padding: 15px 50px;
+        background: #e26e8a;
+        display: block;
+        border-radius: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .card {
+        &-header {
+            height: 180px;
+        }
+
+        &-head {
+            font-size: 16px;
+        }
+
+        &-location {
+            font-size: 14px;
+        }
+
+        &-desc {
+            font-size: 12px;
+        }
+
+        &-footer-actions {
+            margin-bottom: 10px;
+        }
+
+        &-footer {
+            flex-direction: column;
+        }
+
+    }
+}

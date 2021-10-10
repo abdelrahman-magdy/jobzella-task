@@ -1,0 +1,32 @@
+.card {
+
+    &-head {
+        margin: 0px 0 8px;
+        text-transform: capitalize;
+        font-size: 20px;
+        color: #646eff;
+        cursor: pointer;
+    }
+
+    &-location {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: bold;
+        color: #a1a1a1;
+        margin: 0 0 8px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .card {
+        &-head {
+            font-size: 16px;
+        }
+
+        &-location {
+            font-size: 14px;
+        }
+    }
+}
