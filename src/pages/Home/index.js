@@ -24,6 +24,9 @@ export default function Home() {
                             <div className="col">
                                 <Card />
                             </div>
+                            <div className="col">
+                                <Card />
+                            </div>
                         </div>
                     </div>
                 </div>
